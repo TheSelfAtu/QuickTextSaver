@@ -39,7 +39,7 @@ function createTemplateItem(template: string, index: number) {
   </g>
   </svg>`;
   deleteButton.addEventListener("click", (event) => {
-    event.stopPropagation(); // Prevent click event from bubbling up to item
+    event.stopPropagation();
     deleteTemplate(index);
   });
   itemContainer.appendChild(deleteButton);
