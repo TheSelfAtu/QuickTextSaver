@@ -3,13 +3,13 @@ body {
     width: 300px; 
   }
   
-  textarea {
+  .template-textarea {
     width: 100%;
     margin-bottom: 10px;
     resize: vertical;
-  }
+}
   
-  #saveTemplate {
+  .save-button {
     display: block;
     width: 100%;
     padding: 10px;
@@ -20,32 +20,51 @@ body {
     text-align: center;
   }
   
-  #saveTemplate:hover {
+  .save-button:hover {
     background-color: #e8e8e8;
   }
   
-  #saveTemplate:focus {
-    outline: none;
+  .save-button:focus {
+    outline: auto;
     border-color: #007bff;
   }
-  
-  button {
-    display: block;
-    width: 100%;
+      
+  .template-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
     margin-bottom: 10px;
+    background-color: #fafafa;
     border: 1px solid #ccc;
-    background-color: #f8f8f8;
+    border-radius: 5px;
+  }
+
+  .template-text {
+    flex-grow: 1;
+    margin-right: 10px;
     cursor: pointer;
-    text-align: left;
   }
   
-  button:hover {
-    background-color: #e8e8e8;
-  }
-  
-  button:focus {
+  .delete-button {
+    padding: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
     outline: none;
-    border-color: #007bff;
+    color: #aaa;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
   
+  .delete-button:focus {
+    outline: auto;
+  }
+
+  .delete-icon {
+    height: 16px;
+    width: 16px;
+  }
