@@ -52,7 +52,7 @@ function saveTemplate(template: string) {
     const templates = data.savedTemplates || [];
     templates.push(template);
     chrome.storage.local.set({ savedTemplates: templates }, () => {
-      templateList?.appendChild(createTemplateItem(template, templates.length));
+      renderTemplates(templates);
     });
   });
 }
@@ -62,10 +62,19 @@ function deleteTemplate(index: number) {
     const templates = data.savedTemplates || [];
     templates.splice(index, 1);
     chrome.storage.local.set({ savedTemplates: templates }, () => {
-      const templateItem = document.getElementById(`templateItem-${index}`);
-      templateItem?.parentNode?.removeChild(templateItem);
+      renderTemplates(templates);
     });
   });
+}
+
+function renderTemplates(templates: string[]) {
+  if (templateList) {
+    templateList.innerHTML = "";
+
+    templates.forEach((template: string, index: number) => {
+      templateList.appendChild(createTemplateItem(template, index));
+    });
+  }
 }
 
 const templateEditor = document.getElementById(
