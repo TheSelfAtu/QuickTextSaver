@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 300px; 
+  }
+  
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    resize: vertical;
+  }
+  
+  #saveTemplate {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #007bff; 
+    background-color: #f8f8f8;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  #saveTemplate:hover {
+    background-color: #e8e8e8;
+  }
+  
+  #saveTemplate:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  button:hover {
+    background-color: #e8e8e8;
+  }
+  
+  button:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
