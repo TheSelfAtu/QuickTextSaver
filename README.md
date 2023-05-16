@@ -2,9 +2,9 @@
 This is a simple browser extension for managing text templates.
 
 ## Features
-Save Templates: Easily save text templates for later use.
-Use Templates: With a single click, copy your saved templates to your clipboard for quick pasting anywhere.
-Delete Templates: Remove templates that you no longer need.
+- Save Templates: Easily save text templates for later use.
+- Use Templates: With a single click, copy your saved templates to your clipboard for quick pasting anywhere.
+- Delete Templates: Remove templates that you no longer need.
 ## Usage
 Type your template into the text box at the top of the extension popup.
 Click "Save" to add the template to your list.
